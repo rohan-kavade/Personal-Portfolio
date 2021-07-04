@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;500;700&display=swap');
+
+* {
+  scroll-behavior: smooth !important;  
+
+}
+
+html {
+  scroll-behavior: smooth !important;  
+}
+
+body {
+  font-family: 'Mulish', sans-serif;
+}
+
+nav {
+  background-color:#f22f08;
+}
+
+nav ul li a {
+  font-size: 1.2em;
+}
+
+.logo {
+  font-size: 1.5em;
+}
+
+#welcome-section {
+  width: 100%;
+  height: 100vh;  
+  background-color:aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  flex-direction:column;  
+}
+
+#welcome-section h1 {
+  font-weight: 800;
+  font-size: 6em;  
+}
+
+#welcome-section h3{
+  font-weight: 500;
+  font-style: italic;
+  font-size: 2.2em;
+  color: #f22f08;
+}
+
+#projects {
+  padding:1em;
+  background-color: #dedfe0 ;
+  text-align:center;
+}
+
+.projects-section-header{
+  margin-top: 1.2em;
+  font-size:3.6em;
+  font-weight: 800;
+  color: #f22f08;
+  text-decoration: underline;
+  text-shadow: 3px 0   aliceblue;
+  ;
+}
+
+.project-grid{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);  
+  gap: 20px; 
+  width: 100%;
+  height: auto; 
+}
+
+.project-tile{
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  background-color:#45567d;
+}
+.project-tile p{
+  font-weight: 400;
+  font-size: 2.1em;
+  color: #fff;  
+}
+.code{
+  display: block;
+  display: flex;
+  justify-content: center;
+  column-gap: 3em;
+  align-items:center;
+  padding:5px;
+  width:auto;   
+  
+}
+.code a{
+  text-decoration: none;
+  font-size:1.2em; 
+  font-weight: 500;
+  color: #fff;
+  border: 1px solid #fff; 
+  width:30%;
+  transition: 0.4s;
+}
+
+.code a:hover{
+  transform:scale(1.1)
+}
+
+.project-image{  
+  width:auto;
+}
+.project-tile img{
+  width:auto;
+}
+
+@media only screen and (max-width:768px) {
+  .project-grid{
+    grid-template-columns: repeat(1, 1fr);
+         
+  }
+}
+
+
+#contact {
+  width:100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.contact-header h2{
+  font-weight: 800;
+  font-size: 3.6em;
+  text-shadow: 0.8px 0 #f22f08;
+}
+
+.contact-header p{
+  font-weight: 400;
+  font-size: 1.3em;
+  font-style: italic;
+}
+
+.contact-links {
+  margin-top: 14px;
+ 
+  
+}
+
+.contact-links a {
+  display: inline-block;
+  font-size: 1.8em;
+  margin: 0 20px;
+}
+
+footer {
+  height:4vh;
+}
+
+footer p{
+  line-height: 4vh;
+} 
+
+.row{
+  margin: 0;
+  background:#f22f08;
+  height:4px;
+  width:100%;
+}
